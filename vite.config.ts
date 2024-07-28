@@ -27,9 +27,8 @@ export default defineConfig({
     },
 
     devOptions: {
-      enabled: false,
-      navigateFallback: 'index.html',
-      suppressWarnings: true,
+      enabled: true,
+
       type: 'module',
     },
   })],

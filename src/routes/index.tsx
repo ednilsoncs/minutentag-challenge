@@ -1,16 +1,20 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import ProductsScreen from '../modules/Products/ListScreen';
 import ProductDetailScreen from '../modules/Products/DetailScreen';
 
-function Navigate(): JSX.Element {
+function NavigateAppRouters(): JSX.Element {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/products" element={<ProductsScreen />} />
-        <Route path="/product/:id" element={<ProductDetailScreen />} />
+        <Route
+          path="/product/:productIdentifier"
+          element={<ProductDetailScreen />}
+        />
+        <Route path="*" element={<Navigate to="/products" />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
-export default Navigate;
+export default NavigateAppRouters;

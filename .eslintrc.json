@@ -109,5 +109,5 @@
       }
     }
   ],
-  "ignorePatterns": ["prettier.config.js", "vite.config.ts", "rollup.config.mjs"]
+  "ignorePatterns": ["prettier.config.js", "vite.config.ts", "rollup.config.mjs", "pwa-assets.config.ts"]
 }

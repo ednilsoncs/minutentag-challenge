@@ -1,0 +1,135 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 24px 0px;
+
+  .menuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: var(--white);
+    border-radius: 12px;
+  }
+
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 100%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 24px 0px;
+
+  .name {
+    font-family: var(--font-family);
+    color: #646464;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.83px;
+    text-align: left;
+  }
+
+  .title {
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.25px;
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  .listTitle {
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.44px;
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  .list {
+    display: grid;
+    margin-top: 17px;
+    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+    gap: 13px;
+
+    .product {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      background: var(--white);
+      width: 155px;
+      height: 195px;
+      margin-bottom: 13px;
+      border-radius: 12px 32px 12px 12px;
+    }
+
+    .product:nth-of-type(even) {
+      border-radius: 32px 12px 12px 12px;
+    }
+
+    .productName {
+      font-family: var(--font-family);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+      margin-top: 16px;
+      align-self: center;
+    }
+
+    .productImage {
+      max-width: 122px;
+      max-height: 122px;
+      align-self: center;
+      object-fit: cover;
+      object-position: center;
+      margin-top: 5px;
+    }
+
+    .addButton {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: var(--primary);
+      border-radius: 8px 0px 8px 0px;
+      right: 0px;
+      bottom: 0px;
+    }
+
+    .price {
+      font-family: var(--font-family);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+      margin-left: 14px;
+      margin-top: 12px;
+    }
+
+    .evaluation {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      top: 151px;
+      left: 14px;
+
+      span {
+        font-family: var(--font-family);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 12px;
+        text-align: left;
+        color: #808080;
+      }
+    }
+  }
+}
